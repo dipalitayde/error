@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <h1>error functions</h1><br>
+       <center> <em id="my"></em> <br><br>
+        <code id="my2"></code> <br><br><br>
+        <mark id="my3"></mark>
+         <h3 id="my4"></h3></center>
+
+        <script>
+            var x= 90;
+            var y= 80;
+            var z= 100;
+
+
+            try{
+                 mylove("welcome alert")
+            }
+
+
+            catch(err) {
+                document.getElementById("my").innerHTML= "find error? <br>" + err.message;
+            }
+
+
+            add = (a, b) => a / b;
+                document.getElementById("my4").innerHTML = add(100000000, 0);
+
+            document.getElementById("my3").innerHTML = " string addition of the variables are :- " + String(x) + String(y) + String(z);
+
+            document.getElementById("my2").innerHTML= "Basic calculations of the numbers are ? <br><br> ans :-" + x*y/z;
+        </script>
+    </body>
+</html>
